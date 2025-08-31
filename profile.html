@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGAHUB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/profile.css" />
+    <!-- استدعاء أيقونات FontAwesome -->
+  </head>
+  <body>
+    <div
+      class="header sticky-top d-flex justify-content-between align-items-center px-3"
+    >
+      <!-- اللوجو -->
+      <div class="logo">
+        <img src="imgs/logo.png" alt="Logo" />
+      </div>
+
+      <!-- زرار الهامبرجر (يبان في الموبايل/تابلت بس) -->
+      <button
+        class="navbar-toggler d-lg-none border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-align-justify fs-3"></i>
+      </button>
+
+      <!-- اللينكات -->
+      <div class="collapse d-lg-flex" id="mainMenu">
+        <ul class="nav">
+          <li class="p-2 p-lg-3"><a href="index.html">Home</a></li>
+          <li class="p-2 p-lg-3"><a href="index.html#ShowRoom">ShowRoom</a></li>
+          <li class="p-2 p-lg-3"><a href="index.html#Roadmaps">Roadmaps</a></li>
+          <li class="p-2 p-lg-3 active"><a href="#profile">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="profile-container" data-aos="fade-right">
+      <div class="profile-header">
+        <img src="imgs/Ellipse 1.svg" alt="profile" class="profile-img" />
+        <h2>Ahmed Mohammed</h2>
+      </div>
+
+      <ul class="profile-menu">
+        <li>
+          <div class="left">
+            <img src="imgs/pro.svg" alt="profile icon" class="icon" /> Account
+            and profile
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li>
+          <div class="left">
+            <img src="imgs/pro2.svg" alt="profile icon" class="icon" /> Manage
+            Payment Methods
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li>
+          <div class="left">
+            <img src="imgs/pro3.svg" alt="profile icon" class="icon" /> Contact
+            support
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li>
+          <div class="left">
+            <img src="imgs/pro4.svg" alt="profile icon" class="icon" /> Write a
+            Review
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li>
+          <div class="left">
+            <img src="imgs/pro5.svg" alt="profile icon" class="icon" /> Privacy
+            Policy
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li>
+          <div class="left">
+            <img src="imgs/pro6.svg" alt="profile icon" class="icon" /> Invite
+            Friends
+          </div>
+
+          <div class="right">></div>
+        </li>
+
+        <li class="logout">
+          <div class="left">
+            <img src="imgs/pro7.svg" alt="profile icon" class="icon" /> Logout
+          </div>
+
+          <div class="right">></div>
+        </li>
+      </ul>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/master.js"></script>
+  </body>
+</html>

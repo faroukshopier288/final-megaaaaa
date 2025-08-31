@@ -1,0 +1,480 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+
+background: #FFF;
+}
+
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* الجزء اليمين */
+.right-side {
+display: flex;
+justify-content: center;
+
+
+flex-direction: column;
+align-items: center;
+
+background: var(--Main-Red, #E32120);
+}
+
+.right-side .first-img-right {
+    display: flex
+;
+    width: 15rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.0625rem;
+   background: var(--Main-Red, #E32120);
+}
+.right-side p {
+   color: #F9FDFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+height: 87px;
+align-self: stretch;
+padding-left: 60px;
+    padding-right: 60px;
+    
+
+}
+
+.right-side .side-image{
+ width: 338.967px;
+height: 250px;
+flex-shrink: 0;
+fill: #F5F5F5;
+}
+
+
+
+
+
+
+
+
+
+/* الجزء الشمال */
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+align-items: center;
+align-self: stretch;
+border-radius: 16px;
+padding-right: 350px;
+padding-left: 50px;
+
+display: flex;
+width: 720px;
+padding: 47px 39px 82px 0px;
+flex-direction: column;
+align-items: center;
+
+padding-bottom: 20px;
+
+}
+.left-side h2 {
+    align-self: stretch;
+    color: #E32120;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 40px;
+}
+
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  text-align: start;
+  margin-bottom: 50px;
+  
+}
+
+.input-group {
+display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+    padding: 8px 10px;
+    margin: 12px 0;
+    background: #fff;
+    width: 499px;;
+}
+
+.input-group img {
+  width: 20px;
+  height: 20px;
+  fill: gray;
+  margin-right: 10px;         
+}
+
+.input-group input {
+  flex: 1;                    
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+}
+
+.eye-icon {
+  width: 22px;
+  height: 22px;
+  fill: gray;
+  cursor: pointer;
+  margin-left: 10px;         
+}
+
+
+.btn {
+display: flex;
+height: 48px;
+padding: 11px 168px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 16px;
+background: var(--Main-Red, #E32120);
+width: 500px;
+margin-top: 40px;
+margin-bottom: 14px;
+color: #F5F5F5;
+}
+
+.btn:hover {
+  background: #b91313;
+  color: #ffffff;
+}
+
+
+
+
+.icons{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ريسبونسيف */
+@media (max-width: 900px) {
+  .signup-container {
+    flex-direction: column;
+  }
+ 
+}
+
+
+
+
+.left-side h7{
+    color: var(--Main-Red, #E32120);
+text-align: center;
+
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 90px;
+}
+.left-side .icons{
+  padding-top: 10px;
+    padding-left: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-side .icon-link{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+background: url(../imgs/google.png)  / cover no-repeat;
+
+}
+.left-side .ic-3{
+    width: 26px;
+height: 32px;
+flex-shrink: 0;
+aspect-ratio: 13/16;
+background: url(../imgs/facebook.png)  / cover no-repeat;
+
+}
+ .left-side h6{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 80px;
+margin-top: 14px;
+
+ }
+.left-side a {
+    color: #E32120;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+/* للموبايل (أقل من 600px) */
+@media (max-width: 600px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    order: 2; /* الفورم فوق */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right-side {
+    order: 1; /* الصور تحت */
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .input-group,
+  .btn {
+    width: 100%; /* الفورم ياخد عرض الشاشة */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* للابتوب والشاشات الكبيرة (992px وفوق) */
+@media (min-width: 992px) {
+  .signup-container {
+    flex-direction: row; /* يمين وشمال جنب بعض */
+  }
+
+  .left-side {
+   flex: 1;
+       
+        width: 90%;
+  }
+
+  .right-side {
+  flex: 1;
+        width: 70%;
+        min-height: 100vh;
+    
+  }
+
+}
+@media (min-width:766px)and(max-width: 991px) {
+  .right-side  {
+    width: 700%;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    order:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .right-side img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+  
+}
+@media (max-width: 600px) {
+  .signup-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .right-side p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .left-side h7{
+    color: var(--Main-Red, #E32120);
+text-align: center;
+
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 0px;
+}
+.left-side .icons{
+  padding-top: 10px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-side .icon-link{
+    width: 32px;
+height: 32px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+background: url(../imgs/google.png) lightgray 50% / cover no-repeat;
+
+}
+.left-side .ic-3{
+    width: 26px;
+height: 32px;
+flex-shrink: 0;
+aspect-ratio: 13/16;
+background: url(../imgs/facebook.png) lightgray 50% / cover no-repeat;
+}
+ .left-side h6{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 0px;
+margin-top: 14px;
+
+ }
+.left-side a {
+    color: #E32120;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+.validation{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: all 1s linear;
+  }
